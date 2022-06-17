@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wiz-Bangs Worldly Wonders</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <nav class="d-flex justify-content-between align-items-center">
+      <div class="d-flex align-items-center">
+        <img class="shop-logo" src="assets/img/shop-logo.png" alt="">
+        <b>Wiz-bangs Worldly Wonders</b>
+      </div>
+      <button data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"><i class="mdi mdi-sack"></i></button>
+    </nav>
+  </header>
+  <main>
+    <section class="hero-img d-flex align-items-center">
+      <img src="assets/img/wizbang.png" alt="wizbang" class="wizbang">
+      <div class="wiz-text">
+        <h2>Wiz-bang the Wonderful</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum esse delectus quam itaque commodi magnam.
+          Qui, doloribus labore. Repellendus libero veritatis molestias rem cupiditate assumenda accusamus iure numquam,
+          expedita doloremque.</p>
+      </div>
+    </section>
+    <section class="goods d-flex" id="goods">
+
+      <!-- <div class="good">
+        <img src="assets/img/boots.png" alt="">
+        <h4>Cozy Boots</h4>
+        <p>These boots were made for walking, and that's what you will do.</p>
+      </div>
+      <div class="good">
+        <img src="assets/img/bow.png" alt="">
+        <h4>Magic Bow</h4>
+        <p>For ranged attacks, it's like poking someone from far away.</p>
+      </div>
+      <div class="good">
+        <img src="assets/img/helm.png" alt="">
+        <h4>Horned Helm</h4>
+        <p>A nice hard helmet, just don't poke your eye out putting it on.</p>
+      </div>
+      <div class="good">
+        <img src="assets/img/ration.png" alt="">
+        <h4>Rations</h4>
+        <p>This don't taste very good but will feed you in a pinch.</p>
+      </div>
+      <div class="good">
+        <img src="assets/img/ring.png" alt="">
+        <h4>Mysterious Ring</h4>
+        <p>Probably belonged to someone powerful who lost it as some point, (who does that?)</p>
+      </div>
+      <div class="good">
+        <img src="assets/img/rope.png" alt="">
+        <h4>Rope</h4>
+        <p>What is there to describe it's a rope.</p>
+      </div>
+      <div class="good">
+        <img src="assets/img/bag.png" alt="">
+        <h4>Bag of Holding</h4>
+        <p>Where are you going to keep all of your things without such a bag?</p>
+      </div>
+      <div class="good">
+        <img src="assets/img/dagger.png" alt="">
+        <h4>Assassin's Dagger</h4>
+        <p>Currently unavailable, due to on-going investigation.</p>
+      </div> -->
+
+    </section>
+    <!-- NOTE offcanvas -->
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel"><b>Satchel</b></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body" id="cart">
+        
+      </div>
+      <div>
+        <button onclick="clearCart()" class="btn btn-primary w-100" id="checkout-button">Checkout <span id="total">0 GP</span> </button>
+      </div>
+    </div>
+    <!--  -->
+  </main>
+  <footer>
+    thanks for visiting wizbangs 🧙‍♂️🌠
+  </footer>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+
+    <script src="shop.js"></script>
+
+</body>
+
+</html>

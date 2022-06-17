@@ -1,0 +1,130 @@
+:root {
+  --primary: rgb(5, 5, 104);
+  --secondary: azure;
+  --parchment: #faebd7
+}
+
+
+body {
+  background-color: rgb(203, 164, 239);
+  font-family: 'Nunito', sans-serif;
+}
+
+nav {
+  background-color: var(--primary);
+  color: var(--secondary);
+  padding: .25em 1em;
+  font-size: 20px;
+}
+
+nav button {
+  background-color: transparent;
+  border: 2px solid var(--secondary);
+  height: 25%;
+  padding: .75em;
+  border-radius: 8px;
+  color: var(--secondary);
+  cursor: pointer;
+  transition: all .2s linear;
+}
+
+nav button:hover {
+  background-color: var(--secondary);
+  color: var(--primary);
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.shop-logo {
+  width: 60px;
+  filter: blur()
+}
+
+.hero-img {
+  background-image: url(assets/img/hero-image.jpg);
+  background-size: cover;
+  padding: 3em;
+  background-color: rgb(44, 44, 44);
+}
+
+.wizbang {
+  width: 400px;
+  filter: drop-shadow(0px 0px 10px white);
+  transform: scaleX(-1);
+  transition: all .5s ease;
+}
+
+.wizbang:hover {
+  transform: scaleX(-1.25) scaleY(1.25) rotate(10deg);
+}
+
+.wiz-text {
+  padding: 1.5em;
+  background-color: rgba(245, 198, 144, 0.656);
+  height: 50%;
+  border-radius: 8px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.557);
+}
+
+.wiz-text h2 {
+  color: var(--secondary);
+  text-shadow: 2px 2px 0px black;
+}
+
+.goods {
+  justify-content: center;
+  background-color: #cdeaf1;
+  flex-wrap: wrap;
+  padding: 1em;
+}
+
+.good {
+  max-width: 18%;
+  margin: 1em;
+  padding: 1em;
+  background-color: var(--parchment);
+  border: 1px solid black;
+  border-radius: 8px;
+  box-shadow: 2px 2px 0px black;
+  text-align: center;
+  cursor: pointer;
+}
+
+.good:hover {
+  transform: translateY(-5px);
+  box-shadow: 2px 7px 0px black;
+  transition: all .2s ease;
+}
+
+.good img {
+  max-width: 100%;
+  max-height: 150px
+}
+
+.good h4 {
+  padding: .25em;
+  border-bottom: 1px solid black;
+}
+
+footer {
+  text-align: center;
+  background-color: var(--primary);
+  padding: 2em;
+  color: var(--secondary);
+}
+
+.out-of-stock{
+  pointer-events: none;
+  filter: grayscale(1);
+  user-select: none;
+}
